@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Método no permitido' });
   }
 
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwtRn6Res9oAEGfZY5sdgS0BS-WsqSJxVXvA9uEHWyd18ssW7H-1SDqBI8e5uAlbkVI/exec';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxYLq08l45k1hApEhGfwG7ulu2niVOwGc5zjDXafUIkYtoCFa38ow9hQPRA7f3BX4sL/exec';
 
   try {
     // Reenviar el body como POST (no como GET)
