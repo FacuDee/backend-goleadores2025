@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     const response = await fetch(APPS_SCRIPT_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ compact: req.body.compact })
+      body: JSON.stringify(req.body)
     });
     const result = await response.text();
     res.status(200).send(result);
